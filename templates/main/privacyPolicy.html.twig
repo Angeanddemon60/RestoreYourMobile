@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{title}} - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <main class="main pt-5">
+        <section class="section mt-5">
+            <div class="container section-title aos-init aos-animate">
+                <h2>{{title}}</h2>
+            </div>
+            <div class="container aos-init aos-animate">
+                <div class="row gy-4 justify-content-center">
+                    <h3>Article 1 – Droit de Rétractation</h3>
+                    <p>
+                        Conformément aux dispositions légales en vigueur, l'Acheteur dispose d'un délai de 14 jours à compter de la réception du produit pour exercer son droit de rétractation sans avoir à justifier de motifs ni à payer de pénalités.
+                    </p>
+                    <hr>
+                    <h3>Article 2 – Modalités de Retour</h3>
+                    <p> 
+                        Pour exercer son droit de rétractation, l'Acheteur doit notifier sa décision de rétractation par email à l'adresse <a href="mailto:contact@restoreyourmobile.fr">contact@restoreyourmobile.fr</a>. Le produit doit être retourné dans son état d'origine et complet (emballage, accessoires, notice, etc.) à l'adresse suivante :
+                    </p>
+                    <p><strong>RestoreYourMobile</strong><br>
+                    FERNANDEZ Clément EI<br>
+                    4 rue du moulin<br>
+                    17470 La Villedieu</p>
+                    <hr>
+                    <h3>Article 3 – Frais de Retour</h3>
+                    <p>Les frais de retour sont à la charge de l'Acheteur, sauf si le produit livré est défectueux ou non conforme à la commande.</p>
+                    <hr>
+                    <h3>Article 4 – Remboursement</h3>
+                    <p>Le remboursement sera effectué en utilisant le même moyen de paiement que celui utilisé par l'Acheteur lors de la transaction initiale, sauf accord contraire. RestoreYourMobile s'engage à rembourser l'Acheteur dans un délai de 14 jours à compter de la réception du produit retourné ou de la preuve de son expédition.</p>
+                    <hr>
+                    <h3>Article 5 – Exceptions au Droit de Rétractation</h3>
+                    <p>
+                        Le droit de rétractation ne peut être exercé pour :
+                        - Les produits personnalisés ou confectionnés selon les spécifications de l'Acheteur.
+                        - Les produits susceptibles de se détériorer ou de se périmer rapidement.
+                        - Les produits descellés après livraison et ne pouvant être renvoyés pour des raisons d'hygiène ou de protection de la santé.
+                    </p>
+                    <hr>
+                    <h3>Article 6 – Garantie et Service Après-Vente</h3>
+                    <p>
+                        Les produits bénéficient de la garantie légale de conformité et de la garantie contre les vices cachés. En cas de produit défectueux ou non conforme, l'Acheteur peut adresser sa réclamation par email à <a href="mailto:contact@restoreyourmobile.fr">contact@restoreyourmobile.fr</a>. RestoreYourMobile prendra en charge les frais de retour en cas de produit défectueux ou non conforme.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="{{path('app_main')}}" class="btn-get-started">Retour à l'accueil</a>
+            </div>
+        </section>
+    </main>
+{% endblock %}

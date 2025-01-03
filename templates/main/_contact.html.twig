@@ -9,31 +9,7 @@
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
-
-            <div class="col-lg-4">
-
-                <div class="row gy-4">
-
-                    <div class="col-12">
-                        <div class="info-item" data-aos="fade" data-aos-delay="300">
-                            <i class="bi bi-telephone"></i>
-                            <h3>Appelez-moi</h3>
-                            <p><a href="tel:{{contact[0].phonenumber}}">{{contact[0].phonenumber}}</a></p>
-                        </div>
-                    </div><!-- End Info Item -->
-
-                    <div class="col-12">
-                        <div class="info-item" data-aos="fade" data-aos-delay="400">
-                            <i class="bi bi-envelope"></i>
-                            <h3>Envoyez-moi un email</h3>
-                            <p><a href="mailto:{{contact[0].email}}">{{contact[0].email}}</a></p>
-                        </div>
-                    </div><!-- End Info Item -->
-
-                </div>
-
-            </div>
+        <div class="row gy-4 justify-content-center">
 
             <div class="col-lg-8">
                 {{ form_start(form, { 'attr': {'id': 'form' , 'data-aos': 'fade-up', 'data-aos-delay': '200'}}) }}
