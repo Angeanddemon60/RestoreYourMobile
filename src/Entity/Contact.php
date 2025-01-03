@@ -13,8 +13,8 @@ class Contact
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column]
-    private ?int $phonenumber = null;
+    #[ORM\Column(length: 255)]
+    private ?string $phonenumber = null;
 
     #[ORM\Column(length: 255)]
     private ?string $email = null;
@@ -24,12 +24,12 @@ class Contact
         return $this->id;
     }
 
-    public function getPhonenumber(): ?int
+    public function getPhonenumber(): ?string
     {
         return $this->phonenumber;
     }
 
-    public function setPhonenumber(int $phonenumber): static
+    public function setPhonenumber(string $phonenumber): static
     {
         $this->phonenumber = $phonenumber;
 
