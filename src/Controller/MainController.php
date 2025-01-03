@@ -36,7 +36,7 @@ class MainController extends AbstractController
             $emailToSend = (new TemplatedEmail())
             
             ->from($email)
-            ->to('contact@laetitia-georgelin.fr')
+            ->to('contact@restoreyourmobile.fr')
             ->subject('Formulaire de contact')
             ->htmlTemplate('email/send.html.twig')
             ->context([
@@ -50,7 +50,7 @@ class MainController extends AbstractController
 
             $mailConfirm = (new TemplatedEmail())
 
-            ->from('contact@laetitia-georgelin.fr')
+            ->from('contact@restoreyourmobile.fr')
             ->to($email)
             ->subject('Restore Your Mobile - Confirmation de votre demande de contact')
             ->htmlTemplate('email/confirmation.html.twig')
