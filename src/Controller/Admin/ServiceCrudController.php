@@ -19,7 +19,8 @@ class ServiceCrudController extends AbstractCrudController
         return [
             TextField::new('title', 'Titre'),
             TextField::new('description'),
-            TextField::new('icon', 'Icône'),
+            TextField::new('icon', 'Icône')
+            ->setHelp('Aller sur <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a>, choisir une icône et entrer sa classe (par ex. : <code>0-circle</code>).'),
         ];
     }
 
