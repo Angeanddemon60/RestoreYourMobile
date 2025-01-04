@@ -19,7 +19,7 @@
 
     <div class="container footer-top">
         <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 footer-about">
+            <div class="col-lg-4 col-md-6 footer-about order-1">
                 <a href="{{ path('app_main') }}" class="d-flex align-items-center">
                 <span class="sitename">Restore Your Mobile</span>
                 </a>
@@ -28,36 +28,30 @@
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-3 footer-links">
+            <div class="col-lg-2 col-md-6 footer-links order-3 order-lg-2">
                 <h4>Liens Utiles</h4>
                 <ul>
                     <li><i class="bi bi-chevron-right"></i> <a href="{{ path('app_main') }}">Accueil</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="{{ path('app_main') }}#about">À propos</a></li>
                     <li><i class="bi bi-chevron-right"></i> <a href="{{ path('app_main') }}#service">Services</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{{ path('app_main') }}#about">À propos</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links order-4 order-lg-3">
+                <h4>Termes et conditions</h4>
+                <ul>
                     <li><i class="bi bi-chevron-right"></i> <a href="{{ path('app_legal') }}">Mentions légales</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="{{ path('app_cgv') }}">CGV</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{{ path('app_cgv') }}">Conditions générales de vente</a></li>
                     <li><i class="bi bi-chevron-right"></i> <a href="{{ path('app_privacyPolicy') }}">Politique de confidentialité</a></li>
                 </ul>
             </div>
 
-            <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Mes Services</h4>
-                <ul>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-                </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-6 order-2 order-lg-4">
                 <h4>Suivez-moi</h4>
-                <p>Retrouvez-moi sur ces réseaux sociaux</p>
+                <p>Retrouvez-moi sur les réseaux sociaux</p>
                 <div class="social-links d-flex">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href="https://tiktok.com/@restoreyourmobile" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    <a href="" target="_blank"><i class="bi bi-facebook"></i></a>
                 </div>
             </div>
 
